@@ -2,7 +2,7 @@ export const COLORS = {
   primary: "#FFC72C",     // Yellow
   secondary: "#DA291C",   // Red
 
-  white: "#f3f3f2",
+  white: "#ffffff",
   black: "#27251F",
   green: "#37E39F",
   red: "#930203",
@@ -37,7 +37,7 @@ export const FONTS = {
   body2: { fontFamily: "Roboto-Regular", fontSize: SIZES.body2, lineHeight: 30 },
   body3: { fontFamily: "Roboto-Regular", fontSize: SIZES.body3, lineHeight: 22 },
   body4: { fontFamily: "Roboto-Regular", fontSize: SIZES.body4, lineHeight: 22 },
-  body5: { fontFamily: "Roboto-Regular", fontSize: SIZES.body5, lineHeight: 22 },
+  body5: { fontFamily: "Roboto-Regular", fontSize: SIZES.body5, lineHeight: 13 },
 };
 
 const appTheme = { COLORS, SIZES, FONTS };

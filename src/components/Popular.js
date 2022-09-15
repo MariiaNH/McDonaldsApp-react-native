@@ -1,11 +1,13 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { gStyle } from '../styles/style';
 import { popular } from '../popular'
 import { PopularItem } from './PopularItem'
+import { SelectedProductsContext } from '../Globals/SelectedProductsProvider';
 
 
 export const Popular = () => {
+  const {selectedProducts, addProduct, deleteProduct, clearBasket} = useContext(SelectedProductsContext);
   const [active, setActive] = useState(null);
 
   const changeActive = (ind) => {

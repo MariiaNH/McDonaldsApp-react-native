@@ -1,9 +1,8 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, Text } from 'react-native';
 import React, { useState } from 'react';
 import { gStyle } from '../styles/style';
 import { categories } from '../categories'
 import { CategoryItem } from './CategoryItem'
-import { COLORS } from '../styles/constants';
 
 export const Categories = () => {
   const [active, setActive] = useState(null);
