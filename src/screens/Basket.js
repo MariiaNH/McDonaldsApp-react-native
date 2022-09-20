@@ -19,15 +19,15 @@ export default function Basket({navigation}) {
       <StatusBar style="auto" />
       <BasketHeader navigation={navigation} />
       {selectedProducts.length > 0 
-      ? <FlatList 
-        style={gStyle.basketList}
-        keyExtractor={item => item.name}
-        data={selectedProducts}
-        renderItem={({ item }) => (
-          <BasketItem product={item} />
-        )}
-      />
-      : <Text style={gStyle.categoriesHeader1}>There is no products in basket now</Text>
+        ? <FlatList 
+          style={gStyle.basketList}
+          keyExtractor={item => item.name}
+          data={selectedProducts}
+          renderItem={({ item }) => (
+            <BasketItem product={item} />
+          )}
+        />
+        : <Text style={gStyle.categoriesHeader1}>There is no products in basket now</Text>
       }
 
      {selectedProducts.length > 0 && (
